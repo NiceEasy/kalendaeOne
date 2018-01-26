@@ -322,7 +322,7 @@ Kalendae.prototype = {
 
 		columnHeaderFormat    :'dd',            /* number of characters to show in the column headers */
 		titleMonthFormat      :'MMMM,',         /* format mask for month titles. */
-        	titleYearFormat       :'YYYY',          /* format mask for year titles. */
+        titleYearFormat       :'YYYY',          /* format mask for year titles. */
 		dayNumberFormat       :'D',             /* format mask for individual days */
 		dayAttributeFormat    :'YYYY-MM-DD',    /* format mask for the data-date attribute set on every span */
 		parseSplitDelimiter   : /,\s*|\s+-\s+/, /* regex to use for splitting multiple dates from a passed string */
@@ -1113,7 +1113,7 @@ Kalendae.Input = function (targetElement, options) {
 
 Kalendae.Input.prototype = util.merge(Kalendae.prototype, {
 	defaults : util.merge(Kalendae.prototype.defaults, {
-		format: 'MM/DD/YYYY',
+		format: 'YYYY/MM/DD',
 		side: 'bottom',
 		closeButton: true,
 		offsetLeft: 0,
